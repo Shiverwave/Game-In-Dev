@@ -7,9 +7,18 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_box</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_player</object>
+    <object>objects\obj_random_box_placement</object>
+    <object>objects\obj_Box</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Testing_room</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
