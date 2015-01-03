@@ -11,13 +11,22 @@
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_lootbox</sprite>
     <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\Spr_dirt1</sprite>
+    <sprite>sprites\spr_dirt2</sprite>
+    <sprite>sprites\spr_floor_generation</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_random_box_placement</object>
     <object>objects\obj_Box</object>
+    <object>objects\obj_lootbox</object>
+    <object>objects\obj_enemy_basiczombie</object>
+    <object>objects\obj_forest_generator</object>
+    <object>objects\obj_tree</object>
+    <object>objects\obj_floor_dirt</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_room</room>
