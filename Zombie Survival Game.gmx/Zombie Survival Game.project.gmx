@@ -14,10 +14,29 @@
     <sprite>sprites\Spr_dirt1</sprite>
     <sprite>sprites\spr_dirt2</sprite>
     <sprite>sprites\spr_floor_generation</sprite>
+    <sprite>sprites\spr_door</sprite>
+    <sprites name="spr_ext_buildings">
+      <sprite>sprites\spr_ext_build_cnr1</sprite>
+      <sprite>sprites\spr_ext_building_mid</sprite>
+      <sprite>sprites\spr_ext_ruin_build_cnr1</sprite>
+      <sprite>sprites\spr_ext_build_cnr2</sprite>
+      <sprite>sprites\spr_ext_ruin_build_cnr2</sprite>
+      <sprite>sprites\spr_ext_build_cnr3</sprite>
+      <sprite>sprites\spr_ext_ruin_build_cnr3</sprite>
+      <sprite>sprites\spr_ext_build_cnr4</sprite>
+      <sprite>sprites\spr_ext_ruin_build_cnr4</sprite>
+      <sprite>sprites\spr_ext_build_flat1</sprite>
+      <sprite>sprites\spr_ext_ruin_build_flat1</sprite>
+      <sprite>sprites\spr_ext_build_flat2</sprite>
+      <sprite>sprites\spr_ext_ruin_build_flat2</sprite>
+      <sprite>sprites\spr_ext_build_flat3</sprite>
+      <sprite>sprites\spr_ext_ruin_build_flat3</sprite>
+      <sprite>sprites\spr_ext_build_flat4</sprite>
+      <sprite>sprites\spr_ext_ruin_build_flat4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_random_box_placement</object>
@@ -30,6 +49,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_room</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
