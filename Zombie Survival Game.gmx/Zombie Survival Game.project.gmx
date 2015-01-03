@@ -43,9 +43,9 @@
     <object>objects\obj_Box</object>
     <object>objects\obj_lootbox</object>
     <object>objects\obj_enemy_basiczombie</object>
-    <object>objects\obj_forest_generator</object>
-    <object>objects\obj_tree</object>
     <object>objects\obj_floor_dirt</object>
+    <object>objects\obj_tree</object>
+    <object>objects\obj_player_spawn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_room</room>
