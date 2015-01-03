@@ -7,7 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_zombie</sprite>
     <sprite>sprites\spr_box</sprite>
+    <sprite>sprites\spr_lootbox</sprite>
+    <sprite>sprites\spr_tree</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
