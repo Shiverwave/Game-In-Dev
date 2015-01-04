@@ -25,12 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = player x 
-y = player y
+            <string>player = obj_player
+x = player.x 
+y = player.y
 
-player = obj_player
-if distance_to_object(obj_player)
-   move_towards_point(x,y 1)
+attack_range = distance_to_object(obj_player)
+if attack_range &lt;= 20
+   then move_towards_point(x,y,1)
 </string>
           </argument>
         </arguments>
