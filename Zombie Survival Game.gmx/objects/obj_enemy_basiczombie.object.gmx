@@ -26,12 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>player = obj_player
-x = player.x 
-y = player.y
+x_attack = player.x 
+y_attack = player.y
 
 attack_range = distance_to_object(obj_player)
 if attack_range &lt;= 20
-   then move_towards_point(x,y,1)
+   then move_towards_point(x_attack,y_attack,1)
+   else speed = 0
 </string>
           </argument>
         </arguments>
