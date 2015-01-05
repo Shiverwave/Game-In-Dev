@@ -3,7 +3,7 @@
   <spriteName>spr_zombie</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>7</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -28,10 +28,12 @@
             <string>player = obj_player
 x_attack = player.x 
 y_attack = player.y
+speed = choose(1,2,3)
+
 
 attack_range = distance_to_object(obj_player)
 if attack_range &lt;= 20
-   then move_towards_point(x_attack,y_attack,1)
+then move_towards_point(x_attack,y_attack,speed)
    else speed = 0
 </string>
           </argument>
