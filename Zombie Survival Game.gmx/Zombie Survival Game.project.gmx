@@ -9,6 +9,8 @@
     <sprite>sprites\spr_player_idle</sprite>
     <sprite>sprites\spr_player_walk</sprite>
     <sprite>sprites\spr_zombie</sprite>
+    <sprite>sprites\spr_zombie_crawler</sprite>
+    <sprite>sprites\spr_zombie_runner</sprite>
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_lootbox</sprite>
     <sprite>sprites\spr_tree</sprite>
@@ -45,10 +47,13 @@
     <object>objects\obj_Box</object>
     <object>objects\obj_lootbox</object>
     <object>objects\obj_enemy_basiczombie</object>
+    <object>objects\obj_enemy_slowzombie</object>
+    <object>objects\obj_enemy_fastzombie</object>
     <object>objects\obj_floor_dirt</object>
     <object>objects\obj_tree</object>
     <object>objects\obj_player_spawn</object>
     <object>objects\obj_house_generator</object>
+    <object>objects\obj_zombie_randomizer_Spawner_</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_room</room>
