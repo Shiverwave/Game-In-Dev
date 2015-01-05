@@ -33,7 +33,7 @@ speed = 1.5
 
 
 attack_range = distance_to_object(obj_player)
-if attack_range &lt;= 20
+if attack_range &lt;= 100
 then move_towards_point(x_attack,y_attack,speed)
    else speed = 0
 </string>

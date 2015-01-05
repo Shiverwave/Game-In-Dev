@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_enemy_basiczombie" x="224" y="256" name="inst_B4F84508" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="416" y="256" name="inst_2EF78495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_zombie_randomizer_Spawner_" x="128" y="224" name="inst_855838DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="384" y="160" name="inst_BD53CFA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="384" y="256" name="inst_347DEA91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="384" y="64" name="inst_6DFD5CD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -206,7 +206,7 @@
     <instance objName="obj_floor_dirt" x="416" y="224" name="inst_8605C1F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="416" y="288" name="inst_C48811E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="416" y="320" name="inst_6EC739FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floor_dirt" x="416" y="256" name="inst_CF002D62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room_entrance_left" x="0" y="256" name="inst_25BBF8D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="416" y="352" name="inst_6743280D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="384" y="352" name="inst_0BF9BA69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="352" y="352" name="inst_9C53C032" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -447,7 +447,10 @@
     <instance objName="obj_zombie_randomizer_Spawner_" x="160" y="352" name="inst_19F07A2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_zombie_randomizer_Spawner_" x="96" y="256" name="inst_9766B474" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_zombie_randomizer_Spawner_" x="128" y="320" name="inst_60DCF139" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_zombie_randomizer_Spawner_" x="128" y="224" name="inst_855838DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floor_dirt" x="416" y="256" name="inst_3C3B4D22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room_exit_right" x="768" y="256" name="inst_1F978E85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room_exit_left" x="-18" y="257" name="inst_20CFE4F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room_entrance_right" x="745" y="257" name="inst_CB386850" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>8</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -29,6 +29,8 @@
 direction = point_direction(x,y,mouse_x,mouse_y)
 if keyboard_check(vk_nokey)
 then speed = 0
+
+if x &gt; room_width or y &gt; room_height then {room_goto(Testing_room)}
 </string>
           </argument>
         </arguments>
@@ -52,6 +54,36 @@ then speed = 0
           <argument>
             <kind>1</kind>
             <string>image_speed = 0
+if room_entrance_side = 2
+then x = obj_room_entrance_left.x and y = irandom(room_height)
+else room_entrance_side = 0
+if room_entrance_side = 1
+then x = obj_room_entrance_right.x and y = irandom(room_height)
+else room_entrance_side = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>globalvar room_entrance_side
+{room_entrance_side = 0}
 </string>
           </argument>
         </arguments>
