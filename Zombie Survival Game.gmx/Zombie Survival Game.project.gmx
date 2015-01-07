@@ -20,6 +20,7 @@
     <sprite>sprites\spr_door</sprite>
     <sprites name="spr_ext_buildings">
       <sprite>sprites\spr_ext_build_cnr1</sprite>
+      <sprite>sprites\spr_house_wall</sprite>
       <sprite>sprites\spr_ext_building_mid</sprite>
       <sprite>sprites\spr_ext_ruin_build_cnr1</sprite>
       <sprite>sprites\spr_ext_build_cnr2</sprite>
@@ -51,8 +52,8 @@
     <object>objects\obj_enemy_slowzombie</object>
     <object>objects\obj_enemy_fastzombie</object>
     <object>objects\obj_floor_dirt</object>
-    <object>objects\obj_tree</object>
     <object>objects\obj_player_spawn</object>
+    <object>objects\obj_tree</object>
     <object>objects\obj_house_generator</object>
     <object>objects\obj_zombie_randomizer_Spawner_</object>
     <object>objects\obj_room_entrance_left</object>
@@ -60,6 +61,8 @@
     <object>objects\obj_room_exit_right</object>
     <object>objects\obj_room_exit_left</object>
     <object>objects\obj_initializer</object>
+    <object>objects\obj_house_floor</object>
+    <object>objects\obj_house_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
