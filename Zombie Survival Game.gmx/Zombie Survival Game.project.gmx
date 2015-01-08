@@ -13,6 +13,9 @@
     <sprite>sprites\spr_zombie_runner</sprite>
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_lootbox</sprite>
+    <sprite>sprites\spr_atmos_lootbox</sprite>
+    <sprite>sprites\spr_silver_lootbox</sprite>
+    <sprite>sprites\spr_gold_lootbox</sprite>
     <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\Spr_dirt1</sprite>
     <sprite>sprites\spr_dirt2</sprite>
@@ -40,6 +43,7 @@
     </sprites>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_room_x_mask</sprite>
+    <sprite>sprites\spr_gold_lootbox_sparkles</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -48,6 +52,9 @@
     <object>objects\obj_random_box_placement</object>
     <object>objects\obj_Box</object>
     <object>objects\obj_lootbox</object>
+    <object>objects\obj_silver_lootbox</object>
+    <object>objects\obj_gold_lootbox</object>
+    <object>objects\obj_atmos_lootbox</object>
     <object>objects\obj_enemy_basiczombie</object>
     <object>objects\obj_enemy_slowzombie</object>
     <object>objects\obj_enemy_fastzombie</object>
@@ -63,6 +70,7 @@
     <object>objects\obj_initializer</object>
     <object>objects\obj_house_floor</object>
     <object>objects\obj_house_wall</object>
+    <object>objects\obj_sparkles</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
