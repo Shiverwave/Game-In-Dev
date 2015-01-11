@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\spr_player_idle</sprite>
     <sprite>sprites\spr_player_walk</sprite>
+    <sprite>sprites\spr_player_wield_pistol</sprite>
+    <sprite>sprites\spr_player_wield_pistol_fire</sprite>
     <sprite>sprites\spr_zombie</sprite>
     <sprite>sprites\spr_zombie_crawler</sprite>
     <sprite>sprites\spr_zombie_runner</sprite>
@@ -17,8 +19,10 @@
     <sprite>sprites\spr_silver_lootbox</sprite>
     <sprite>sprites\spr_gold_lootbox</sprite>
     <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_pistol_drop</sprite>
     <sprite>sprites\Spr_dirt1</sprite>
     <sprite>sprites\spr_dirt2</sprite>
+    <sprite>sprites\spr_pistol_ammo_drop</sprite>
     <sprite>sprites\spr_floor_generation</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprites name="spr_ext_buildings">
