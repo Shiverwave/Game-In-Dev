@@ -48,6 +48,7 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_room_x_mask</sprite>
     <sprite>sprites\spr_gold_lootbox_sparkles</sprite>
+    <sprite>sprites\mask_player</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -71,10 +72,10 @@
     <object>objects\obj_room_entrance_right</object>
     <object>objects\obj_room_exit_right</object>
     <object>objects\obj_room_exit_left</object>
-    <object>objects\obj_initializer</object>
     <object>objects\obj_house_floor</object>
     <object>objects\obj_house_wall</object>
     <object>objects\obj_sparkles</object>
+    <object>objects\obj_prop_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

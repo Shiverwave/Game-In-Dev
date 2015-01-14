@@ -6,9 +6,9 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>spr_room_x_mask</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_player">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,13 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//entrance 2 = Leaving from right and coming in from the left
-//entrance 1 = Leaving from left and coming in from the right
-globalvar room_entrance_side 
-{room_entrance_side = 2}
-globalvar game_difficulty
-{game_difficulty = + 1}
-room_goto(1)
+            <string>if 1 &gt; irandom(8) then if 1 &gt; irandom(3) then instance_change(obj_silver_lootbox,true) else instance_change(obj_lootbox,true)
 </string>
           </argument>
         </arguments>

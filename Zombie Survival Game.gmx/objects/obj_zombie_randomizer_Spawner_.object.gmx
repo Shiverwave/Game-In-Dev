@@ -30,6 +30,7 @@ if 1 &gt; zombie_type then instance_create(self.x, self.y, obj_enemy_basiczombie
 if 0 = zombie_type then if 1 &gt; irandom(1) then instance_create(self.x, self.y, obj_enemy_slowzombie) else instance_create(self.x, self.y, obj_enemy_fastzombie)
 
 if 1 &gt; irandom(1) then sprite_index = Spr_dirt1 else sprite_index = spr_dirt2
+if distance_to_object(obj_house_generator) = 32 then instance_change(obj_house_floor, true)
 </string>
           </argument>
         </arguments>
