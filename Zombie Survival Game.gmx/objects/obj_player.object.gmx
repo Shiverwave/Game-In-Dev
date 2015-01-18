@@ -31,6 +31,10 @@ if keyboard_check(vk_nokey)
 then speed = 0
 
 if x &gt; room_width or y &gt; room_height then {room_goto(Testing_room)}
+
+if place_meeting(sprite_width,sprite_height,obj_enemy_basiczombie) then health = - 5
+
+draw_healthbar(5,5,115,20,1,1,1,1,1,true,true)
 </string>
           </argument>
         </arguments>
@@ -108,6 +112,48 @@ else room_entrance_side = 0
             <string>globalvar room_entrance_side
 {room_entrance_side = 0}
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>723</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_draw_health</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>5</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>5</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>115</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>20</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
