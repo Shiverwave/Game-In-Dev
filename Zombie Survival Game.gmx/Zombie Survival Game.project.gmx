@@ -21,7 +21,10 @@
     <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\spr_pistol_drop</sprite>
     <sprite>sprites\Spr_dirt1</sprite>
+    <sprite>sprites\spr_dirt3</sprite>
+    <sprite>sprites\spr_dirt4</sprite>
     <sprite>sprites\spr_dirt2</sprite>
+    <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_pistol_ammo_drop</sprite>
     <sprite>sprites\spr_floor_generation</sprite>
     <sprite>sprites\spr_door</sprite>
