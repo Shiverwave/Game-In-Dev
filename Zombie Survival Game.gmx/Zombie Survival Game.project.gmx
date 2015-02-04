@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player_idle</sprite>
+    <sprite>sprites\spr_player_hurt</sprite>
     <sprite>sprites\spr_player_walk</sprite>
     <sprite>sprites\spr_player_wield_pistol</sprite>
     <sprite>sprites\spr_player_wield_pistol_fire</sprite>
@@ -31,6 +32,7 @@
     <sprites name="spr_ext_buildings">
       <sprite>sprites\spr_ext_build_cnr1</sprite>
       <sprite>sprites\spr_house_wall</sprite>
+      <sprite>sprites\spr_house_wall_wrecked</sprite>
       <sprite>sprites\spr_ext_building_mid</sprite>
       <sprite>sprites\spr_ext_ruin_build_cnr1</sprite>
       <sprite>sprites\spr_ext_build_cnr2</sprite>
@@ -65,7 +67,7 @@
     <object>objects\obj_lootbox</object>
     <object>objects\obj_silver_lootbox</object>
     <object>objects\obj_gold_lootbox</object>
-    <object>objects\obj_atmos_lootbox</object>
+    <object>objects\obj_ultra_lootbox</object>
     <object>objects\obj_enemy_basiczombie</object>
     <object>objects\obj_enemy_slowzombie</object>
     <object>objects\obj_enemy_fastzombie</object>
@@ -82,6 +84,12 @@
     <object>objects\obj_house_wall</object>
     <object>objects\obj_sparkles</object>
     <object>objects\obj_prop_spawner</object>
+    <object>objects\obj_wall_wrecked</object>
+    <object>objects\obj_weapon_spawner</object>
+    <object>objects\obj_rifle</object>
+    <object>objects\obj_sniper</object>
+    <object>objects\obj_shotgun</object>
+    <object>objects\obj_lootbox_destroyed</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

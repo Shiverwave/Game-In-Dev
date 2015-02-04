@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if 1 &gt; irandom(1) then sprite_index = Spr_dirt1 else sprite_index = spr_dirt2
+            <string>if 1 &gt; irandom(1) then sprite_index = Spr_dirt1 else if 1 &gt; irandom(1) then sprite_index = spr_dirt2 else if 1 &gt; irandom(1) then sprite_index = spr_dirt3 else sprite_index = spr_dirt4
 if 1 &gt; irandom(500) then instance_change(obj_house_generator,true)
-if 1 &gt; irandom(71 - game_difficulty + 10) then instance_change(obj_zombie_randomizer_Spawner_,true) 
+if 1 &gt; irandom(71 - game_difficulty + 15) then instance_change(obj_zombie_randomizer_Spawner_,true) 
 </string>
           </argument>
         </arguments>
