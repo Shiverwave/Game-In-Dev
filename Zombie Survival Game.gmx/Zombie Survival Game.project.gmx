@@ -52,6 +52,9 @@
     <sprite>sprites\spr_room_x_mask</sprite>
     <sprite>sprites\spr_gold_lootbox_sparkles</sprite>
     <sprite>sprites\mask_player</sprite>
+    <sprite>sprites\spr_rifle</sprite>
+    <sprite>sprites\spr_sniper</sprite>
+    <sprite>sprites\spr_shotgun</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
