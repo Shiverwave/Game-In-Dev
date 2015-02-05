@@ -10,6 +10,12 @@
     <sprite>sprites\spr_player_hurt</sprite>
     <sprite>sprites\spr_player_walk</sprite>
     <sprite>sprites\spr_player_wield_pistol</sprite>
+    <sprite>sprites\spr_player_weild_rifle</sprite>
+    <sprite>sprites\spr_player_wield_sniper</sprite>
+    <sprite>sprites\spr_player_wield_sniper_fire</sprite>
+    <sprite>sprites\spr_player_wield_rifle_fire</sprite>
+    <sprite>sprites\spr_player_weild_shotgun</sprite>
+    <sprite>sprites\spr_player_wield_shotgun_fire</sprite>
     <sprite>sprites\spr_player_wield_pistol_fire</sprite>
     <sprite>sprites\spr_zombie</sprite>
     <sprite>sprites\spr_zombie_crawler</sprite>
@@ -20,7 +26,6 @@
     <sprite>sprites\spr_silver_lootbox</sprite>
     <sprite>sprites\spr_gold_lootbox</sprite>
     <sprite>sprites\spr_tree</sprite>
-    <sprite>sprites\spr_pistol_drop</sprite>
     <sprite>sprites\Spr_dirt1</sprite>
     <sprite>sprites\spr_dirt3</sprite>
     <sprite>sprites\spr_dirt4</sprite>
