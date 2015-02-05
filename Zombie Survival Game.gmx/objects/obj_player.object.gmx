@@ -64,8 +64,8 @@ if keyboard_check(vk_shift) and speed&gt;0 //Check if player is already moving a
 
 if x &gt; room_width or y &gt; room_height then {room_goto(Testing_room)} //Not being used
 
-draw_healthbar(5,5,115,20,1,1,1,1,1,true,true)
-if health = 0 then room_goto(Testing_room)
+
+if health &lt;= 0 then room_goto(room1)
 </string>
           </argument>
         </arguments>
@@ -450,6 +450,7 @@ else room_entrance_side = 0
 if room_entrance_side = 1
 then x = obj_room_entrance_right.x and y = irandom(room_height)
 else room_entrance_side = 0
+if room = room1 then health = 100
 </string>
           </argument>
         </arguments>
@@ -517,6 +518,51 @@ else room_entrance_side = 0
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_colour(c_blue)
+draw_text(32, 32, "Area: " + string(game_difficulty));
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_font(fnt_health)
+draw_set_colour(c_black)
+draw_text(46, -4, string(health));
+</string>
           </argument>
         </arguments>
       </action>

@@ -30,7 +30,7 @@
 globalvar room_entrance_side 
 {room_entrance_side = 2}
 globalvar game_difficulty
-{game_difficulty=+1}
+{game_difficulty+=1}
 room_goto(1)
 </string>
           </argument>
