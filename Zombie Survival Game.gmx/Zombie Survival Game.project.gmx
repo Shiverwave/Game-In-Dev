@@ -40,6 +40,7 @@
       <sprite>sprites\spr_house_wall</sprite>
       <sprite>sprites\spr_house_wall_wrecked</sprite>
       <sprite>sprites\spr_ext_building_mid</sprite>
+      <sprite>sprites\sprite55</sprite>
       <sprite>sprites\spr_ext_ruin_build_cnr1</sprite>
       <sprite>sprites\spr_ext_build_cnr2</sprite>
       <sprite>sprites\spr_ext_ruin_build_cnr2</sprite>
