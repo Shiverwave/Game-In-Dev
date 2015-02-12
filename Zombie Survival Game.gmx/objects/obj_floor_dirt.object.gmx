@@ -56,6 +56,7 @@ if 1 &gt; irandom(85 - game_difficulty) then instance_change(obj_zombie_randomiz
 if distance_to_object(obj_house_floor) &lt;=32
    then instance_change(obj_house_wall,true) 
 if instance_number(obj_house_floor) &gt; 9 then if sprite_index = spr_dirt2 then sprite_index = spr_cobble
+if place_meeting(x,y,obj_demon_boss) then instance_change(obj_hell_floor,true)
 </string>
           </argument>
         </arguments>

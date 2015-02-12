@@ -18,6 +18,7 @@
     <sprite>sprites\spr_player_wield_shotgun_fire</sprite>
     <sprite>sprites\spr_player_wield_pistol_fire</sprite>
     <sprite>sprites\spr_zombie</sprite>
+    <sprite>sprites\spr_boss_demon</sprite>
     <sprite>sprites\spr_zombie_crawler</sprite>
     <sprite>sprites\spr_zombie_runner</sprite>
     <sprite>sprites\spr_box</sprite>
@@ -27,6 +28,7 @@
     <sprite>sprites\spr_gold_lootbox</sprite>
     <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\Spr_dirt1</sprite>
+    <sprite>sprites\spr_hell_floor</sprite>
     <sprite>sprites\spr_dirt3</sprite>
     <sprite>sprites\spr_dirt4</sprite>
     <sprite>sprites\spr_dirt2</sprite>
@@ -88,6 +90,7 @@
     <object>objects\obj_tree</object>
     <object>objects\obj_house_generator</object>
     <object>objects\obj_zombie_randomizer_Spawner_</object>
+    <object>objects\obj_boss_spawn</object>
     <object>objects\obj_room_entrance_left</object>
     <object>objects\obj_room_entrance_right</object>
     <object>objects\obj_room_exit_right</object>
@@ -104,6 +107,8 @@
     <object>objects\obj_lootbox_destroyed</object>
     <object>objects\obj_health_pack</object>
     <object>objects\obj_health_up</object>
+    <object>objects\obj_demon_boss</object>
+    <object>objects\obj_hell_floor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
