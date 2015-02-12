@@ -65,6 +65,7 @@
     <sprite>sprites\spr_sniper</sprite>
     <sprite>sprites\spr_shotgun</sprite>
     <sprite>sprites\spr_health_pack</sprite>
+    <sprite>sprites\spr_health_up</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -102,6 +103,7 @@
     <object>objects\obj_shotgun</object>
     <object>objects\obj_lootbox_destroyed</object>
     <object>objects\obj_health_pack</object>
+    <object>objects\obj_health_up</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

@@ -176,6 +176,9 @@
     <instance objName="obj_floor_dirt" x="352" y="256" name="inst_034AD174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor_dirt" x="320" y="256" name="inst_941260FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_exit_right" x="768" y="256" name="inst_5A2112FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rifle" x="416" y="256" name="inst_233EC5B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sniper" x="416" y="288" name="inst_B2666ED8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shotgun" x="416" y="320" name="inst_5BC59245" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
