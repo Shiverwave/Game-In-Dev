@@ -475,7 +475,7 @@ draw_text(32, 32, "Area: " + string(game_difficulty));
             <kind>1</kind>
             <string>draw_set_font(fnt_health)
 draw_set_colour(c_black)
-draw_text(46, -4, string(health));
+draw_text(36, -4, string(health)  + '/' + string(maxhealth));
 </string>
           </argument>
         </arguments>
@@ -496,9 +496,9 @@ draw_text(46, -4, string(health));
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x, y, obj_rifle) {draw_text(x,y-5,'Press E to pick up')}
-if place_meeting(x, y, obj_sniper) {draw_text(x,y-5,'Press E to pick up')}
-if place_meeting(x, y, obj_shotgun) {draw_text(x,y-5,'Press E to pick up')}
+            <string>if place_meeting(x, y, obj_rifle) {draw_text(x,y-15,'Press E to pick up')}
+if place_meeting(x, y, obj_sniper) {draw_text(x,y-15,'Press E to pick up')}
+if place_meeting(x, y, obj_shotgun) {draw_text(x,y-15,'Press E to pick up')}
 </string>
           </argument>
         </arguments>
@@ -568,6 +568,29 @@ if speed = 0 then speed = -1.5
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="76">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>game_difficulty += 50
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="9" enumb="68">

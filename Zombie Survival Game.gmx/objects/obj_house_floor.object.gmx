@@ -25,10 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if 1 &gt; irandom(10) {
+            <string>if room = room1 then game_difficulty = 0
+if room = room1 then crates = 0
+crates = game_difficulty
+house = crates
+if crates &gt; 4 then crates = 4
+if house &gt; 5 then house = 5
+if room = room1 then crates = 0
+if 1 &gt; irandom(12 - house + 1 / 2) {
         instance_change(obj_house_generator,true)
 }
-if 1 &gt; irandom(7) {
+if 1 &gt; irandom(20 - crates) {
    instance_create(x,y,obj_prop_spawner)
 }
 </string>
