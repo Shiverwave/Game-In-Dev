@@ -63,6 +63,9 @@ if x &gt; room_width or y &gt; room_height then {room_goto(Testing_room)} //Not 
 
 if health &lt;= 0 then room_goto(room1)
 if health &gt; maxhealth then health = maxhealth
+if mouse_check_button_pressed(mb_left) and gun = 1 then instance_create(x + 16,y +10,obj_bullet)
+if mouse_check_button_pressed(mb_left) and gun = 2 then instance_create(x + 16,y +10,obj_bullet)
+if mouse_check_button_pressed(mb_left) and gun = 3 then instance_create(x + 16,y +10,obj_bullet)
 </string>
           </argument>
         </arguments>
@@ -387,7 +390,8 @@ if room = room1 then health = 100
             <kind>1</kind>
             <string>globalvar room_entrance_side
 {room_entrance_side = 0}
-gun = 0
+globalvar gun
+{gun = 0}
 maxhealth = 100
 </string>
           </argument>
@@ -641,6 +645,28 @@ if speed = 0 then speed = -1.5
           <argument>
             <kind>0</kind>
             <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="37">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>

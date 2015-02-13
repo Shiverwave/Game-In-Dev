@@ -68,6 +68,8 @@
     <sprite>sprites\spr_shotgun</sprite>
     <sprite>sprites\spr_health_pack</sprite>
     <sprite>sprites\spr_health_up</sprite>
+    <sprite>sprites\spr_bullet_rifle</sprite>
+    <sprite>sprites\spr_blood_splat</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -109,6 +111,9 @@
     <object>objects\obj_health_up</object>
     <object>objects\obj_demon_boss</object>
     <object>objects\obj_hell_floor</object>
+    <object>objects\obj_bullet</object>
+    <object>objects\obj_shot_bullet</object>
+    <object>objects\obj_blood</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
