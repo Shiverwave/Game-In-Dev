@@ -65,7 +65,7 @@ if health &lt;= 0 then room_goto(room1)
 if health &gt; maxhealth then health = maxhealth
 if mouse_check_button_pressed(mb_left) and gun = 1 then instance_create(x + 16,y +10,obj_bullet)
 if mouse_check_button_pressed(mb_left) and gun = 2 then instance_create(x + 16,y +10,obj_bullet)
-if mouse_check_button_pressed(mb_left) and gun = 3 then instance_create(x + 16,y +10,obj_bullet)
+if mouse_check_button_released(mb_left) and gun = 3 then instance_create(x + 16,y +10,obj_bullet)
 </string>
           </argument>
         </arguments>
