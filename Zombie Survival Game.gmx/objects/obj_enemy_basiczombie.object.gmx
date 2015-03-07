@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>my_health = 50
+x = x + 16
+y = y + 16
 </string>
           </argument>
         </arguments>

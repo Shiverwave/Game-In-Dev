@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>spr_player_idle</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[2] = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="4">
       <action>
         <libid>1</libid>
@@ -34,6 +57,28 @@ if gun = 3 then sprite_index = spr_player_wield_sniper
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -53,19 +98,30 @@ if gun = 3 then sprite_index = spr_player_wield_sniper
             <kind>1</kind>
             <string>image_index = direction-90
 direction = point_direction(x,y,mouse_x,mouse_y)
-if keyboard_check(vk_nokey)
-then speed = 0
 if keyboard_check(vk_shift) and speed&gt;0 //Check if player is already moving and if the player is pressing shift.
 {speed=3} //Set player speed to 3
-
-if x &gt; room_width or y &gt; room_height then {room_goto(Testing_room)} //Not being used
-
+if keyboard_check(vk_nokey) speed = 0
 
 if health &lt;= 0 then room_goto(room1)
 if health &gt; maxhealth then health = maxhealth
-if mouse_check_button_pressed(mb_left) and gun = 1 then instance_create(x + 16,y +10,obj_bullet)
-if mouse_check_button_pressed(mb_left) and gun = 2 then instance_create(x + 16,y +10,obj_bullet)
-if mouse_check_button_released(mb_left) and gun = 3 then instance_create(x + 16,y +10,obj_bullet)
+
+if mouse_check_button_pressed(mb_left) and gun = 0 and alarm[2] &lt;= 0 {
+instance_create(x,y,obj_punch)
+alarm[2] = 1
+}
+
+if mouse_check_button(mb_left) and gun = 1 and alarm[2] &lt;= 0 {
+instance_create(x,y,obj_bullet)
+alarm[2] = 5
+}
+if mouse_check_button_pressed(mb_left) and gun = 2 and alarm[2] &lt;= 0 { 
+instance_create(x,y,obj_bullet)
+alarm[2] = 35
+}
+if mouse_check_button_released(mb_left) and gun = 3 and alarm[2] &lt;= 0 { 
+instance_create(x,y,obj_bullet)
+alarm[2] = 30
+}
 </string>
           </argument>
         </arguments>
@@ -327,11 +383,11 @@ yDif = y - other.y;
 
 if abs(xDif)&gt;abs(yDif)
 {
-x = other.x + sign(xDif) * 34;
+x = other.x + sign(xDif) * 32;
 }
 else
 {
-y = other.y + sign(yDif) * 34;
+y = other.y + sign(yDif) * 32;
 }
 health -=(10 + game_difficulty - 1)
 sprite_index = spr_player_hurt
@@ -360,10 +416,10 @@ alarm[4] = 10
             <kind>1</kind>
             <string>image_speed = 0
 if room_entrance_side = 2
-then x = obj_room_entrance_left.x and y = irandom(room_height)
+then x = obj_room_entrance_left.x - 10 and y = irandom(room_height)
 else room_entrance_side = 0
 if room_entrance_side = 1
-then x = obj_room_entrance_right.x and y = irandom(room_height)
+then x = obj_room_entrance_right.x - 10 and y = irandom(room_height)
 else room_entrance_side = 0
 if room = room1 then health = 100
 </string>
@@ -551,7 +607,7 @@ if place_meeting(x, y, obj_shotgun) {draw_text(x,y-15,'Press E to pick up')}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed -= (speed * 1.5)
+            <string>speed = speed - (speed * 1.5)
 if speed = 0 then speed = -1.5
 </string>
           </argument>

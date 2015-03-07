@@ -25,11 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_towards_point(mouse_x,mouse_y,20)
+            <string>pierce = 0
+move_towards_point(mouse_x,mouse_y,20)
 if gun = 3 then instance_create(x + irandom(25),y + irandom(25),obj_shot_bullet)
 if gun = 3 then instance_create(x - irandom(25),y - irandom(25),obj_shot_bullet)
 if gun = 1 then alarm[0] = 12
-if gun = 2 then alarm[0] = 22
+if gun = 2 { 
+alarm[0] = 22  
+pierce = 1
+}
 if gun = 3 then alarm[0] = 8
 </string>
           </argument>
@@ -52,20 +56,73 @@ if gun = 3 then alarm[0] = 8
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="obj_enemy_basiczombie">
+    <event eventtype="4" ename="obj_enemy_fastzombie">
       <action>
         <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if pierce = 1 then pierce -= 1 else instance_destroy()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemy_slowzombie">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if pierce = 1 then pierce -= 1 else instance_destroy()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemy_basiczombie">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if pierce &lt; 1 then instance_destroy()
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

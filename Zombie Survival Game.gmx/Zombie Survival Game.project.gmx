@@ -70,6 +70,7 @@
     <sprite>sprites\spr_health_up</sprite>
     <sprite>sprites\spr_bullet_rifle</sprite>
     <sprite>sprites\spr_blood_splat</sprite>
+    <sprite>sprites\spr_punch</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -114,6 +115,8 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_shot_bullet</object>
     <object>objects\obj_blood</object>
+    <object>objects\obj_player_new</object>
+    <object>objects\obj_punch</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
